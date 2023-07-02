@@ -1,5 +1,9 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Routes, Route } from "react-router-dom";
+
+const HomePage = lazy(() => import("./HomePage/HomePage"));
+const AboutPage = lazy(() => import("./AboutPage/AboutPage"));
+const ProductsPage = lazy(() => import("./ProductsPage/ProductsPage"));
 
 const App = () => {
   return (
